@@ -10,7 +10,7 @@ var
   procedure Hellorld;
   begin
     WriteLn('╭―――――――――――――――――――――╮');
-    WriteLn('│  Hellorld emu6502!  │');
+    WriteLn('│  Hellorld! emu6502  │');
     WriteLn('╰―――――――――――――――――――――╯');
   end;
 
@@ -25,7 +25,7 @@ begin
   Mem.Show($1000, $20);
 
   CPU.Reset(Mem);
-  CPU.Execute(2, Mem);
+  CPU.Execute(Mem);
   CPU.ShowBoxedRegs;
   CPU.ShowBoxedFlags;
 end.
